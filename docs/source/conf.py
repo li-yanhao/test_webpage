@@ -9,14 +9,22 @@
 project = 'test'
 copyright = '2025, yanhao'
 author = 'yanhao'
+release = '0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["myst_parser", "sphinx.ext.mathjax",
+              "autodoc2"]
 
 templates_path = ['_templates']
 exclude_patterns = []
+
+
+
+autodoc2_packages = [
+    "multiply.py"
+]
 
 
 
